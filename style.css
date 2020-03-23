@@ -1,0 +1,103 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.border {
+  margin-top: 50px;
+  margin-left: 10px;
+  width: 80%;
+  height: 100px;
+  border: solid darkgrey 2px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.animation {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  background-color: red;
+  border-right: none;
+  transition: width 0.5s, background-color 0.5s ease-in 0.5s,
+    border-right 0.5s 0.5s;
+}
+
+.animation:hover {
+  width: 800px;
+  background-color: green;
+  border-right: solid black 20px;
+}
+
+/* Übung 2 Vierecke hover*/
+
+.box {
+  margin-top: 10vh;
+  margin-left: 20px;
+  height: 100px;
+  width: 500px;
+  background-color: lightslategray;
+  position: relative;
+}
+
+#square1 {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  position: absolute;
+  transition: margin-left 2s ease-out;
+}
+
+#square2 {
+  height: 50px;
+  width: 50px;
+  background-color: green;
+  position: absolute;
+  top: 50px;
+  transition: margin-left 1s ease-out 1s;
+}
+
+.box:hover div {
+  margin-left: 450px;
+}
+
+/* Bild Discover Übung */
+
+#border {
+  position: relative;
+  margin-top: 10vh;
+  margin-left: 10vw;
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+  margin-bottom: 10vh;
+}
+
+#border img {
+  position: absolute;
+}
+
+#shadow {
+  position: absolute;
+  display: block;
+  top: 250px;
+  height: 250px;
+  width: 246px;
+  border: black solid 2px;
+  background-color: black;
+  opacity: 0.8;
+  transition: top 1s ease-out, opacity 0.5s ease-in 0.5s;
+}
+
+#shadow p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 45%;
+}
+
+#border:hover #shadow {
+  top: 0;
+  opacity: 0.4;
+}
